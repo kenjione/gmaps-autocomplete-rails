@@ -19,7 +19,7 @@ In your project `Gemfile`
 ```ruby
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'gmaps-autocomplete-rails'
+gem 'gmaps-autocomplete-rails', github: 'kenjione/gmaps-autocomplete-rails'
 ```
 
 Then run `bundle install`;)
@@ -31,10 +31,8 @@ Add to javascript manifest file, fx `application.js`
 ```
 //= require jquery_ujs
 //= require jquery.ui.all
-//= require gmaps-auto-complete
+//= require gmaps-autocomplete
 ```
-
-PS: I have been notified that `//= require gmaps-autocomplete` should work, but I don't see why/how, since the js file is called `gmaps-auto-complete.js`.
 
 Include the google maps script before `application.js`, fx in your layout file:
 
